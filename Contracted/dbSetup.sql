@@ -6,3 +6,23 @@ CREATE TABLE IF NOT EXISTS accounts(
   email varchar(255) COMMENT 'User Email',
   picture varchar(255) COMMENT 'User Picture'
 ) default charset utf8 COMMENT '';
+CREATE TABLE IF NOT EXISTS contractors(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name TEXT NOT NULL
+) default charset utf8 COMMENT '';
+CREATE TABLE IF NOT EXISTS companies(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name TEXT NOT NULL
+) default charset utf8 COMMENT '';
+INSERT INTO
+  contractors (name)
+VALUES
+  ('TAM');
+INSERT INTO
+  contractors (name)
+VALUES
+  ('HAM');
+INSERT INTO
+  companies(name)
+Values
+  ('Tam and Ham industries')
